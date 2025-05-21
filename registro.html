@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar - Wiki do Jogo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Registrar</h1>
+        <div class="login-register">
+            <a href="login.html">Login</a> | <a href="registro.html">Registrar</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="personagens.html">Personagens</a></li>
+                <li><a href="enigmas.html">Enigmas</a></li>
+                <li><a href="artes.html">Artes Conceituais</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        <section id="register">
+            <h2>Crie uma Conta</h2>
+            <form action="login.php" method="post">
+                <div>
+                 <label for="username">Usuário:</label>
+                    <input type="text" id="username" name="username" required><br><br>
+
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required><br><br>
+
+                    <input type="submit" value="Entrar">
+            </form>
+            <p id="register-error-message" style="color: red; display: none;">Erro ao registrar! Tente novamente.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Wiki do Jogo. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

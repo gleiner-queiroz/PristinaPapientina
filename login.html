@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Wiki do Jogo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Login</h1>
+        <div class="login-register">
+            <a href="login.html">Login</a> | <a href="registro.html">Registrar</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="personagens.html">Personagens</a></li>
+                <li><a href="enigmas.html">Enigmas</a></li>
+                <li><a href="artes.html">Artes Conceituais</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        <section id="login">
+            <h2>Entre com sua Conta</h2>
+            <form id="login-form" onsubmit="return validateLogin()">
+                <div>
+                    <label for="username">Usuário:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div>
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+            <p id="error-message" style="color: red; display: none;">Usuário ou senha incorretos!</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Wiki do Jogo. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="login.js"></script>
+</body>
+</html>
